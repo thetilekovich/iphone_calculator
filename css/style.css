@@ -1,0 +1,69 @@
+body{
+    background: #272727;
+}
+.container{
+    width: 300px;
+    background: #000;
+    margin: 100px auto;
+    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 10px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    border-radius:50px;
+}
+.item{
+    background: rgb(61, 57, 57);
+    color: aliceblue;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    cursor: pointer;
+}
+.input{
+    grid-column: 1/-1;
+    margin-left: 10px;
+}
+
+.form{
+    width: 86%;
+    border: none;
+    height: 230px;
+    background: #000;
+    display: flex;
+    text-align: right;
+    color: wheat;
+    font-size: 40px;
+    border-radius:20px;
+    resize: none;
+    padding-top: 30px;
+    padding-right: 20px;
+    border-bottom: orange solid 1px;
+    border-top: 1px solid orange;
+
+}
+.zero{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 90px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 20px ;
+
+}
+.clean, .anothers, .percent{
+    background: gray;
+    color: black;
+}
+.divide, .times, .minus, .plus, .equal{
+    background: rgb(202, 132, 3);
+}
